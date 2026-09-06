@@ -21,6 +21,7 @@ unsigned int strlen(const char* str);
 // if and only if all the bytes in x are nonzero.
 char* strcpy(char* dst, const char* src);
 char* strncpy(char* dst, const char* src, unsigned int count);
+char* strcat(char* dst, const char* src);
 
 // also vectorized like strcpy, but seems to have a bug(?).
 // doesn't break the functionality but causes the process to revert to per-char

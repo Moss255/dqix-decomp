@@ -95,3 +95,51 @@ src/Memory/AllocatorUnion.cpp:
     complete
     .text start:0x020afe6c end:0x020afec4
 
+src/Map/Main/ZonePredicates.cpp:
+    complete
+    .text start:0x0201b588 end:0x0201b600
+
+src/Map/Main/MapArchiveLoader.cpp:
+    complete
+    .text start:0x02013fb4 end:0x02014108
+
+src/Map/Main/MapListReader.cpp:
+    complete
+    .text start:0x0201c5f4 end:0x0201c79c
+
+src/Map/Main/LoadAmdjArchive.cpp:
+    complete
+    .text start:0x020145a8 end:0x020146fc
+
+src/Map/Main/LoadAmblMembers.cpp:
+    complete
+    .text start:0x02014390 end:0x02014414
+
+src/Map/Main/CopyMapVec3.cpp:
+    complete
+    .text start:0x02013b54 end:0x02013b70
+
+src/Map/Main/BuildArcMemberPath.cpp:
+    complete
+    .text start:0x02014d18 end:0x02014d80
+
+src/Map/Main/AddMapObject.cpp:
+    complete
+    .text start:0x02014900 end:0x0201498c
+
+src/Map/Main/AccumulateResourceSizes.cpp:
+    complete
+    .text start:0x0201498c end:0x02014a24
+
+src/Model/Main/SetAttachBoneName.cpp:
+    complete
+    .text start:0x02034980 end:0x020349c0
+
+src/Model/Main/ReadModelAttachConfig.cpp:
+    complete
+    .text start:0x0203461c end:0x020346b4
+
+src/System/SceneOverlays.cpp:
+    complete
+    .text start:0x020a18f4 end:0x020a1940
+
