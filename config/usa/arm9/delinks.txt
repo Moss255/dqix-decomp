@@ -203,3 +203,7 @@ src/System/VramRelease.cpp:
     complete
     .text start:0x020c49ec end:0x020c4b38
 
+src/System/VramSlots.cpp:
+    complete
+    .text start:0x020c4b38 end:0x020c4bd8
+
