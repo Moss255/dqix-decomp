@@ -72,13 +72,30 @@ struct BattleStruct {
     // Read sign-extended from bit 0, so a signed one-bit field: 0 or -1.
     /* 0x5ccc */ signed int flag_0x5ccc : 1;
                  unsigned int unknown_0x5ccc_rest : 31;
-    /* 0x5cd0 */ char unknown_0x5cd0[0x63d6 - 0x5cd0];
+    /* 0x5cd0 */ char unknown_0x5cd0[0x5cda - 0x5cd0];
+    /* 0x5cda */ unsigned char value_0x5cda;
+    /* 0x5cdb */ char unknown_0x5cdb;
+    // Indexed without a bounds check; an entry counts only when its sign bit is
+    // set. The length below just fills the gap to the next known field and is
+    // not established.
+    /* 0x5cdc */ unsigned int flagged_0x5cdc[446];
+    /* 0x63d4 */ char unknown_0x63d4;
+    /* 0x63d5 */ unsigned char value_0x63d5;
     /* 0x63d6 */ unsigned char value_0x63d6;
     /* 0x63d7 */ char unknown_0x63d7;
     /* 0x63d8 */ unsigned short value_0x63d8;
     /* 0x63da */ unsigned short value_0x63da;
     /* 0x63dc */ char unknown_0x63dc[0x63e0 - 0x63dc];
     /* 0x63e0 */ int value_0x63e0;
+    /* 0x63e4 */ char unknown_0x63e4[0x71f8 - 0x63e4];
+    /* 0x71f8 */ int value_0x71f8;
+    /* 0x71fc */ char unknown_0x71fc[0x74de - 0x71fc];
+    // Four eight-byte slots: cleared together with one 0x20-byte memset, and
+    // handed out one at a time under an index < 4 check.
+    /* 0x74de */ char slots_0x74de[4][8];
+    /* 0x74fe */ char unknown_0x74fe[0x7f6c - 0x74fe];
+    /* 0x7f6c */ int value_0x7f6c;
+    /* 0x7f70 */ unsigned char value_0x7f70;
 };
 struct BattleStruct* GetBattleStruct();
 struct CombatantStruct* GetCombatantFromList(struct BattleStruct* battleStruct, int id);
