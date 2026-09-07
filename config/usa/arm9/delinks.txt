@@ -191,3 +191,7 @@ src/Combat/Main/CombatantStatus2.cpp:
     complete
     .text start:0x020890a4 end:0x020891b0
 
+src/System/Object_02037A88Bits.cpp:
+    complete
+    .text start:0x02033f2c end:0x02034044
+
