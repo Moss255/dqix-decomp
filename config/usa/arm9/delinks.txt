@@ -179,3 +179,11 @@ src/System/Object_02037A88.cpp:
     complete
     .text start:0x02037a88 end:0x02037af8
 
+src/System/Object_02055080.cpp:
+    complete
+    .text start:0x02055080 end:0x02055090
+
+src/System/Object_02055080Fields.cpp:
+    complete
+    .text start:0x02055090 end:0x02055180
+
