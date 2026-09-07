@@ -167,3 +167,7 @@ src/System/AccessorObject.cpp:
     complete
     .text start:0x02039820 end:0x020398b4
 
+src/System/ScreenEffectState.cpp:
+    complete
+    .text start:0x0203b498 end:0x0203b5a0
+
