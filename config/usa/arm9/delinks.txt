@@ -151,3 +151,7 @@ src/Combat/Main/CombatantStatus.cpp:
     complete
     .text start:0x02088840 end:0x02088dd8
 
+src/Collision/Main/CollisionMesh.cpp:
+    complete
+    .text start:0x0204bf30 end:0x0204c030
+
