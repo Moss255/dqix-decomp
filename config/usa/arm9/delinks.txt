@@ -187,3 +187,7 @@ src/System/Object_02055080Fields.cpp:
     complete
     .text start:0x02055090 end:0x02055180
 
+src/Combat/Main/CombatantStatus2.cpp:
+    complete
+    .text start:0x020890a4 end:0x020891b0
+
