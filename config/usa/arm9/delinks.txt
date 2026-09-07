@@ -207,3 +207,11 @@ src/System/VramSlots.cpp:
     complete
     .text start:0x020c4b38 end:0x020c4bd8
 
+src/System/SlotAccess.cpp:
+    complete
+    .text start:0x020c6f94 end:0x020c6fb4
+
+src/System/SlotAccessLocks.cpp:
+    complete
+    .text start:0x020c6fc0 end:0x020c7080
+
