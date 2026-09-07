@@ -12,3 +12,7 @@ src/Combat/Overlay_0/GetCombatantByID.cpp:
 src/Combat/Overlay_0/UpdateCombatantBuffs.cpp:
 	complete
 	.text start:0x02155a50 end:0x02155e94
+
+src/System/Overlay_0/Ov0Dispatch.cpp:
+	complete
+	.text start:0x02181d4c end:0x021820bc
