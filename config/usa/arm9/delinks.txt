@@ -195,3 +195,7 @@ src/System/Object_02037A88Bits.cpp:
     complete
     .text start:0x02033f2c end:0x02034044
 
+src/System/FlagPair.cpp:
+    complete
+    .text start:0x0201238c end:0x0201248c
+
