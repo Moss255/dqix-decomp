@@ -171,3 +171,7 @@ src/System/ScreenEffectState.cpp:
     complete
     .text start:0x0203b498 end:0x0203b5a0
 
+src/System/BackgroundControl.cpp:
+    complete
+    .text start:0x0204a5d4 end:0x0204a764
+
