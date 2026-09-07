@@ -149,5 +149,5 @@ src/Combat/Main/BattleStructAccessors.cpp:
 
 src/Combat/Main/CombatantStatus.cpp:
     complete
-    .text start:0x02088840 end:0x02088a70
+    .text start:0x02088840 end:0x02088bf0
 
