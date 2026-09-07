@@ -223,3 +223,7 @@ src/System/IndexThunks.cpp:
     complete
     .text start:0x020c6a54 end:0x020c6aec
 
+src/System/Object_020375CC.cpp:
+    complete
+    .text start:0x020375cc end:0x02037640
+
