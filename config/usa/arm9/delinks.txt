@@ -175,3 +175,7 @@ src/System/BackgroundControl.cpp:
     complete
     .text start:0x0204a5d4 end:0x0204a764
 
+src/System/Object_02037A88.cpp:
+    complete
+    .text start:0x02037a88 end:0x02037af8
+
