@@ -159,3 +159,7 @@ src/Combat/Main/BattleStateAccessors.cpp:
     complete
     .text start:0x02011ff0 end:0x020120f0
 
+src/System/ForwardingThunks.cpp:
+    complete
+    .text start:0x020bba38 end:0x020bbc38
+
