@@ -1215,7 +1215,7 @@ data_ov017_021d6484 kind:data(any) addr:0x021d6484
 data_ov017_021d64a0 kind:data(any) addr:0x021d64a0
 data_ov017_021d64b0 kind:data(any) addr:0x021d64b0
 data_ov017_021d64f4 kind:data(any) addr:0x021d64f4
-data_ov017_021d656c kind:data(any) addr:0x021d656c
+fieldSpriteFiles kind:data(any) addr:0x021d656c
 data_ov017_021d65ec kind:data(any) addr:0x021d65ec
 data_ov017_021d65f4 kind:data(any) addr:0x021d65f4
 data_ov017_021d6600 kind:data(any) addr:0x021d6600

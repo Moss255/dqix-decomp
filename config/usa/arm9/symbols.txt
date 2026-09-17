@@ -6421,7 +6421,7 @@ data_020e8bec kind:data(any) addr:0x020e8bec
 data_020e8c00 kind:data(any) addr:0x020e8c00
 data_020e8c58 kind:data(any) addr:0x020e8c58
 data_020e8c5c kind:data(any) addr:0x020e8c5c
-data_020e8caa kind:data(any) addr:0x020e8caa
+monsterActionWeights kind:data(any) addr:0x020e8caa
 data_020e8cc5 kind:data(any) addr:0x020e8cc5
 data_020e8cc6 kind:data(any) addr:0x020e8cc6
 data_020e8cd0 kind:data(any) addr:0x020e8cd0
@@ -6511,7 +6511,7 @@ data_020ee6e8 kind:data(any) addr:0x020ee6e8
 data_020ee700 kind:data(any) addr:0x020ee700
 data_020ee710 kind:data(any) addr:0x020ee710
 data_020ee712 kind:data(any) addr:0x020ee712
-data_020ee748 kind:data(any) addr:0x020ee748
+vocationSkillTrees kind:data(any) addr:0x020ee748
 data_020ee794 kind:data(any) addr:0x020ee794
 data_020ee798 kind:data(any) addr:0x020ee798
 data_020ee7c8 kind:data(any) addr:0x020ee7c8
