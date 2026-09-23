@@ -11,7 +11,7 @@
 #define func_0205ec34 func_0205ff20
 #define GetBitInBitfield func_0206f104
 #define func_0207ba28 func_0207c860
-#define func_020c54a4 func_020c6f70
+#define SetFogHardware func_020c6f70
 #define func_020c555c func_020c7028
 #define func_020c5574 func_020c7040
 
@@ -85,7 +85,7 @@ extern "C"
 
     void func_0207ba28(LightingInfo*, int, float*, float*, float*);
 
-    void func_020c54a4(int, int, int, int);
+    void SetFogHardware(int, int, int, int);
     // set edge colors
     void func_020c555c(unsigned short*);
     // set fog table
@@ -815,7 +815,7 @@ void LightingManager::ProcessZoneChange(Zone3D *newZone)
         spriteDiffuseColor_ = info->basic_.spriteDiffuseColor[index];
         modelDiffuseColor_ = info->basic_.modelDiffuseColor[index];
         edgeColor_ = info->basic_.edgeColor[index];
-        func_020c54a4(true, fog->type, fog->depthShift, fog->offset);
+        SetFogHardware(true, fog->type, fog->depthShift, fog->offset);
         GX_FOG_COLOR = fog->color | (fog->alpha << 16);
         func_020c5574(fog->densityTable);
         unsigned short edgeColors[8] = {
@@ -829,7 +829,7 @@ void LightingManager::ProcessZoneChange(Zone3D *newZone)
     }
     else // lighting mode is not 1 or 2
     {
-        func_020c54a4(0, 0, 1, 0x5800);
+        SetFogHardware(0, 0, 1, 0x5800);
         maybePotBarrelDiffuseColor_ = 0x7fff;
         spriteDiffuseColor_ = 0x7fff;
         modelDiffuseColor_ = 0x7fff;
@@ -954,7 +954,7 @@ void LightingManager::RecomputeAdvancedLighting()
     ComputeFogInfo(&fogInfo_);
     if (fogEnabled_)
     {
-        func_020c54a4(true, fogInfo_.type, fogInfo_.depthShift, fogInfo_.offset);
+        SetFogHardware(true, fogInfo_.type, fogInfo_.depthShift, fogInfo_.offset);
         GX_FOG_COLOR = (fogInfo_.color) | (fogInfo_.alpha << 16);
         func_020c5574(fogInfo_.densityTable);
     }
