@@ -7,7 +7,7 @@
 #ifdef jpn
 #define func_020100a8 func_0200ff04
 #define func_0200ff1c func_0200fd78
-#define func_02012fe4 func_02012dac
+#define GetCurrentZone func_02012dac
 #endif
 
 extern "C"
@@ -17,7 +17,7 @@ unsigned int func_020100a8(GameState*);
 char* func_0200ff1c(GameState*, unsigned int);
 
 // returns the overland zone instance
-void* func_02012fe4();
+void* GetCurrentZone();
 }
 
 // USA: func_020a5cb8
@@ -27,7 +27,7 @@ unsigned short GenerateNewMapQuality()
     GameState* gameState = GameState::GetInstance();
     char* maybeMainCharDataPtr = func_0200ff1c(gameState, func_020100a8(gameState));
     // Another pointless function call
-    (void)func_02012fe4();
+    (void)GetCurrentZone();
     GrottoStruct* grotto = gameState->GetGrottoStruct();
 
 #ifdef jpn

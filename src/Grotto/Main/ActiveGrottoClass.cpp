@@ -7,7 +7,7 @@
 #ifdef jpn
     #define func_020323c4 func_02031efc
 
-    #define func_02012fe4 func_02012dac
+    #define GetCurrentZone func_02012dac
     #define func_0201b588 func_0201b300
 
     #define func_020a3720 func_020a5498
@@ -21,7 +21,7 @@ extern "C"
     int func_020323c4(int minimum, int maximum);
 
     // Returns the 'zone struct' (still need to figure out what this contains)
-    void* func_02012fe4();
+    void* GetCurrentZone();
 
     // Returns true if the value is between 40001 and 41505, respectively.
     // Most likely these are the zone IDs corresponding to grottos.
@@ -159,7 +159,7 @@ int ActiveGrottoClass::GetActiveGrottoEnviron() const
 int ActiveGrottoClass::GetFloorCount() const
 {
     GrottoStruct* grotto = GameState::GetInstance()->GetGrottoStruct();
-    void* zone = func_02012fe4();
+    void* zone = GetCurrentZone();
     if (!func_0201b588(*(unsigned short*)zone))
         return 0;
 

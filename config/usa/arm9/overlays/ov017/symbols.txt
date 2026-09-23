@@ -561,8 +561,8 @@ func_ov017_021b5fc0 kind:function(arm,size=0xd0) addr:0x021b5fc0
 func_ov017_021b6090 kind:function(arm,size=0xe4) addr:0x021b6090
 func_ov017_021b6174 kind:function(arm,size=0x70) addr:0x021b6174
 func_ov017_021b61e4 kind:function(arm,size=0x38) addr:0x021b61e4
-func_ov017_021b621c kind:function(arm,size=0x74) addr:0x021b621c
-func_ov017_021b6290 kind:function(arm,size=0x32c) addr:0x021b6290
+InitEventBattleTransition kind:function(arm,size=0x74) addr:0x021b621c
+UpdateEventBattleTransition kind:function(arm,size=0x32c) addr:0x021b6290
 func_ov017_021b65bc kind:function(arm,size=0x1c) addr:0x021b65bc
 func_ov017_021b65d8 kind:function(arm,size=0x4) addr:0x021b65d8
 func_ov017_021b65dc kind:function(arm,size=0x4) addr:0x021b65dc
@@ -1176,10 +1176,10 @@ func_ov017_021d4ccc kind:function(arm,size=0x18) addr:0x021d4ccc
 func_ov017_021d4ce4 kind:function(arm,size=0x114) addr:0x021d4ce4
 func_ov017_021d4df8 kind:function(arm,size=0x40) addr:0x021d4df8
 func_ov017_021d4e38 kind:function(arm,size=0x12bc) addr:0x021d4e38
-func_ov017_021d60f4 kind:function(arm,size=0x1c) addr:0x021d60f4
-func_ov017_021d6110 kind:function(arm,size=0x1c) addr:0x021d6110
-func_ov017_021d612c kind:function(arm,size=0x8) addr:0x021d612c
-func_ov017_021d6134 kind:function(arm,size=0x14) addr:0x021d6134
+ScriptValueToInt kind:function(arm,size=0x1c) addr:0x021d60f4
+ScriptValueToFloat kind:function(arm,size=0x1c) addr:0x021d6110
+ScriptValueRaw kind:function(arm,size=0x8) addr:0x021d612c
+ScriptValueStoreThroughRef kind:function(arm,size=0x14) addr:0x021d6134
 func_ov017_021d6148 kind:function(arm,size=0x14) addr:0x021d6148
 data_ov017_021d615c kind:data(any) addr:0x021d615c
 data_ov017_021d616c kind:data(any) addr:0x021d616c

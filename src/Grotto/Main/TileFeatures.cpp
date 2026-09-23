@@ -4,12 +4,12 @@
 
 #ifdef jpn
 #define data_020e7010 data_020e78b4
-#define func_02012fe4 func_02012dac
+#define GetCurrentZone func_02012dac
 #define data_020e700c data_020e78b0
 #endif
 
 extern unsigned char const data_020e7010[];
-extern "C" int func_02012fe4(void);
+extern "C" int GetCurrentZone(void);
 extern unsigned char const data_020e700c[];
 
 // USA: func_0201ea54
@@ -20,7 +20,7 @@ int ChooseTileFeaturePosition(const TileFeaturePlacementData* data)
  
     // This function doesn't seem to do anything besides put a value in r0.
     // We never use the value, but it gets called so yeah   
-    func_02012fe4();
+    GetCurrentZone();
 
     int validCount = 0;
 
@@ -53,7 +53,7 @@ int ChooseTileFeatureOrientation(const TileFeaturePlacementData* data,
 {
     char validDirections[4];
 
-    func_02012fe4();
+    GetCurrentZone();
     int numValidDirections = 0;    
     int j = 4;
     unsigned char* dstPtr = (unsigned char*)validDirections;

@@ -9,7 +9,7 @@
 #define func_020100bc func_0200ff18
 #define func_0202ec84 func_0202e7f4
 #define func_0205ec34 func_0205ff20
-#define func_0206dfb0 func_0206f104
+#define GetBitInBitfield func_0206f104
 #define func_0207ba28 func_0207c860
 #define func_020c54a4 func_020c6f70
 #define func_020c555c func_020c7028
@@ -79,7 +79,7 @@ extern "C"
 
     void func_0202ec84(void*, const Vector3fix*, int*, int*);
 
-    bool func_0206dfb0(void*, void*, int);
+    bool GetBitInBitfield(void*, void*, int);
 
     char* func_0205ec34(); 
 
@@ -661,7 +661,7 @@ void LightingManager::ModelTransformTintBrightnessContrast(NSBXXInternalModel *m
         return;
 
     int index;
-    if (zone->currentZoneID_ == 6401 && func_0206dfb0(struct0205ec34, struct0205ec34 + 0x8c, 0x2a))
+    if (zone->currentZoneID_ == 6401 && GetBitInBitfield(struct0205ec34, struct0205ec34 + 0x8c, 0x2a))
         index = 4;
     else
     {
@@ -781,7 +781,7 @@ void LightingManager::ProcessZoneChange(Zone3D *newZone)
         info->basic_.FillMissingEntries();
         
         // 6401 = id of front of starflight express
-        if (zone->currentZoneID_ == 6401 && func_0206dfb0(struct0205ec34, struct0205ec34 + 0x8c, 0x2a))
+        if (zone->currentZoneID_ == 6401 && GetBitInBitfield(struct0205ec34, struct0205ec34 + 0x8c, 0x2a))
         {
             index = 4;
         }
