@@ -209,8 +209,8 @@ func_0200fb08 kind:function(arm,size=0x38) addr:0x0200fb08
 func_0200fb40 kind:function(arm,size=0x44) addr:0x0200fb40
 func_0200fb84 kind:function(arm,size=0x8) addr:0x0200fb84
 func_0200fb8c kind:function(arm,size=0x8) addr:0x0200fb8c
-func_0200fb94 kind:function(arm,size=0x8) addr:0x0200fb94
-func_0200fb9c kind:function(arm,size=0x8) addr:0x0200fb9c
+SetGameMode kind:function(arm,size=0x8) addr:0x0200fb94
+GetGameMode kind:function(arm,size=0x8) addr:0x0200fb9c
 func_0200fba4 kind:function(arm,size=0x10) addr:0x0200fba4
 func_0200fbb4 kind:function(arm,size=0x148) addr:0x0200fbb4
 func_0200fcfc kind:function(arm,size=0x10) addr:0x0200fcfc
@@ -4096,7 +4096,7 @@ func_020a171c kind:function(arm,size=0x11c) addr:0x020a171c
 func_020a1838 kind:function(arm,size=0x9c) addr:0x020a1838
 func_020a18d4 kind:function(arm,size=0x20) addr:0x020a18d4
 func_020a18f4 kind:function(arm,size=0x4c) addr:0x020a18f4
-func_020a1940 kind:function(arm,size=0x100) addr:0x020a1940
+LoadScene kind:function(arm,size=0x100) addr:0x020a1940
 func_020a1a40 kind:function(arm,size=0x174) addr:0x020a1a40
 func_020a1bb4 kind:function(arm,size=0x118) addr:0x020a1bb4
 func_020a1ccc kind:function(arm,size=0x118) addr:0x020a1ccc
@@ -6445,7 +6445,7 @@ data_020e8ebc kind:data(any) addr:0x020e8ebc
 data_020e8ec4 kind:data(any) addr:0x020e8ec4
 data_020e8ed8 kind:data(any) addr:0x020e8ed8
 data_020e8f08 kind:data(any) addr:0x020e8f08
-data_020e8f20 kind:data(any) addr:0x020e8f20
+sSceneTable kind:data(any) addr:0x020e8f20
 treasureMapItemIDs kind:data(any) addr:0x020e9038
 data_020e9074 kind:data(any) addr:0x020e9074
 data_020e9077 kind:data(any) addr:0x020e9077
